@@ -1,0 +1,71 @@
+
+.fp-tableCell{
+    
+    margin:0 auto;
+    width: 1000px;
+}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;    
+        
+	}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+        height: 50px;
+	}
+	#footer{
+		bottom:0px;
+        height: 30px;
+	}
+.logo a{
+    display: inline-block;
+    width: 250px;
+    height: 45px;
+    background: url("http://placehold.it/250x49") no-repeat 0 0;
+    text-indent: 100%;
+    overflow: hidden;
+   
+}
+
+.logo{
+    
+    float: left;
+    top: -30px;
+    position: relative;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+#menu{
+    float:right;
+    position: relative;
+    margin-right: 20px;
+    top: -3px;
+}
+#menu li {
+    
+    float:left;
+   display: inline-block;
+   text-decoration: none;
+    padding: 3px 10px;
+
+}

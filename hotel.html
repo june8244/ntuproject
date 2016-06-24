@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ZooTopia</title>
+    
+    <link rel="stylesheet" type="text/css" href="fullPage.js-master/fullPage.js-master/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/hotel.css"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="JS/hotel.js"></script>
+<script type="text/javascript" src="fullPage.js-master/fullPage.js-master/jquery.fullPage.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
+				menu: '#menu'
+			});
+		});
+	</script>
+
+</head>
+<body>
+<div id="header">
+<div class="logo">
+          <h1><a href="">zootopia</a></h1>
+        </div>
+<ul id="menu">
+	<li data-menuanchor="firstPage" class=""><a href="#firstPage">HOME</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">HOUSE</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">RESERVATION</a></li>
+	<li data-menuanchor="4thPage"><a href="#4thPage">ABOUT</a></li>
+	<li data-menuanchor="5thPage"><a href="#5thPage">CONTACT</a></li>
+</ul>
+</div>
+
+
+<div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);">
+	<div class="section  fp-section fp-table fp-completely" id="section0" data-anchor="firstPage" style="height: 386px; background-color: rgb(27, 188, 155);"><div class="fp-tableCell" style="height: 386px;">
+	<div class="intro">
+		<h1>ZooTopia</h1>
+		<p>YAAAAAAAAAAAAA</p>
+		</div>
+	</div></div>
+	<div class="section fp-section fp-table" id="section1" data-anchor="secondPage" style="height: 386px; background-color: rgb(75, 191, 195);"><div class="fp-tableCell" style="height: 386px;">
+		<div class="intro">
+			<h1>House</h1>
+			<p>AHHHHHHHHHHHH</p>
+		</div>
+	</div></div>
+	<div class="section fp-section fp-table" id="section2" data-anchor="3rdPage" style="height: 386px; background-color: rgb(123, 170, 190);"><div class="fp-tableCell" style="height: 386px;">
+		<div class="intro">
+			<h1>RESERVATION</h1>
+			<p>YEEEEEEEEEEEEEEEEEE</p>
+		</div>
+	</div></div>
+	<div class="section fp-section fp-table" id="section3" data-anchor="4thPage" style="height: 386px; background-color: rgb(123, 170, 190);"><div class="fp-tableCell" style="height: 386px;">
+		<div class="intro">
+			<h1>ABOUT</h1>
+			<p>Wowwwwwwwwwwwww</p>
+		</div>
+	</div></div>
+	<div class="section fp-section fp-table" id="section4" data-anchor="5thPage" style="height: 386px; background-color: rgb(123, 170, 190);"><div class="fp-tableCell" style="height: 386px;">
+		<div class="intro">
+			<h1>Contact</h1>
+			<p>HAHAHAHAHAHAHa</p>
+		</div>
+	</div></div>
+</div>
+
+<div id="footer"></div>
+</body>
+</html>
