@@ -1,0 +1,43 @@
+#origing {
+    background: url(land01.jpg) 50% 0 no-repeat fixed;
+/*    margin: 0 auto;*/
+/*    padding: 0;*/
+    color:red;
+/*    position: absolute;*/
+    z-index: -1;
+    width: 200%;
+    height: 1000px;
+    padding 0;
+}
+
+
+#believe{
+	background: url(junifoxx.jpg) 50% 0 no-repeat fixed;
+	color: blue;
+	height: 900px;
+/*    z-index: -1222222222222222222220;*/
+	padding: 0px 0 0 0;	
+}
+
+#history
+{
+    background: url(pet.jpg)  50% 0 no-repeat fixed;
+    
+	color: blue;
+	height: 900px;
+/*    z-index: -1222222222222222222220;*/
+	padding: 0px 0 0 0;	
+}
+
+
+
+/*
+#second .bg{
+	background: url(images/trainers.png) 50% 0 no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+	z-index: 200;
+}*/
