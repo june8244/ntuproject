@@ -1,14 +1,13 @@
-body{
-    text-align: center;
-}
+
 .fp-tableCell{
-    left: 0;
-    right: 0;
-    margin:auto;
+    
+    margin:0 auto;
     width: 1000px;
     position: relative;
 }
-
+h1{
+    text-align: center;
+}
 	/* Centered texts in each section
 	* --------------------------------------- */
 	.section{
@@ -27,19 +26,28 @@ body{
 		z-index:100;
 		text-align:center;
 		color: #f2f2f2;
-		padding: 20px 0 0 0;
+		
 	}
 
 	#header{
 		top:0px;
         height: 50px;
         position:fixed;
+        padding: 20px 0 0 0;
 	}
 	#footer{
 		bottom:0px;
-        height: 30px;
-        position: relative;
+        position: absolute;
+        height: 40px;
+        
+               
 	}
+.f-text{
+    margin: 0 auto;
+    position: relative;
+}
+
+
 .logo a{
     display: inline-block;
     width: 250px;
@@ -77,12 +85,16 @@ a {
     padding: 3px 10px;
 
 }
+#section{
 
+    margin: 0 auto;
+    position: relative;
+    
+}
 .news{
    
     display: inline-block;
     padding: 0 10px;
-    margin: 0;
     position: relative;
 }
 a.monkey-hover-effect{
