@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <title>ZooTopia</title>
     
-    <link rel="stylesheet" type="text/css" href="fullPage.js-master/fullPage.js-master/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/hotel.css"/>
+   
+	<!--slick-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="fullPage.js-master/fullPage.js-master/jquery.fullPage.css" />
+  
+       <link rel="stylesheet" type="text/css" href="CSS/hotel.css"/>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+  
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+<!--  slick-->
+
+
+
+<!--Parallex-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!--parallex-->
+
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -22,31 +49,10 @@
 			});
 		});
 	</script>
-
-</head>
-
-<!--slick-->
- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-  </style>
-<!--  slick-->
-
-
-
-<!--Parallex-->
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
 <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#nav').localScroll(800);
@@ -59,18 +65,17 @@ $(document).ready(function(){
 	$('#second').parallax("50%", 0.1);
 	$('.bg').parallax("50%", 0.4);
 	$('#third').parallax("50%", 0.3);
-
 })
 </script>
-<!--parallex-->
-
+</head>
 
 
 <body>
 <div id="header">
 <div class="logo">
-          <h1><a href="">zootopia</a></h1>
+          <h1><a href=""><img src="images/logo.png" alt="zootopia" width="250px" height="49px">zootopia</a></h1>
         </div>
+
 <ul id="menu">
 	<li data-menuanchor="firstPage" class=""><a href="#firstPage">HOME</a></li>
 	<li data-menuanchor="secondPage"><a href="#secondPage">HOUSE</a>
@@ -85,14 +90,55 @@ $(document).ready(function(){
 <div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);">
 	<div class="section  fp-section fp-table fp-completely" id="section0" data-anchor="firstPage" style="height: 386px; background-color: rgb(27, 188, 155);"><div class="fp-tableCell" style="height: 386px;">
 	<div class="intro">
-		<h1>ZooTopia</h1>
-		<p>YAAAAAAAAAAAAA</p>
+		<h1>News</h1>
+		<br><br>
+		<div class="news">
+		    
+   <a href="#" class="monkey-hover-effect">
+       <div class="item--container">
+          <img src="images/foxtival.jpg" alt="foxtival" weight="360px" height="275px" >
+        
+        <div class="item--block"></div>
+        <div class="item--block--text">
+            <h2>Foxtival!</h2>
+		  <p>7/1~7/30 <br>Foxes for freeeee!!</p></div>
+    </div>    
+  </a>
+        </div>
+        <div class="news">
+		    
+   <a href="#" class="monkey-hover-effect">
+       <div class="item--container">
+          <img src="images/newroom.jpg" alt="newroom" weight="360px" height="275px" >
+        
+        <div class="item--block"></div>
+        <div class="item--block--text">
+            <h2>New Room!</h2>
+		  <p>Just finished in two months! Fitted for frogs,crocodiles and snakes!</p></div>
+    </div>    
+  </a>
+        </div>
+        <div class="news">
+		    
+   <a href="#" class="monkey-hover-effect">
+       <div class="item--container">
+          <img src="images/pet.jpg" alt="discount" weight="360px" height="275px" >
+        
+        <div class="item--block"></div>
+        <div class="item--block--text">
+            <h2>Promotion!</h2>
+		  <p>Five pets get one free!</p></div>
+    </div>    
+  </a>
+        </div>
+		    
 		</div>
-	</div></div>
+		</div>
+	</div>
 	<div class="section fp-section fp-table" id="section1" data-anchor="secondPage" style="height: 386px; background-color: rgb(75, 191, 195);"><div class="fp-tableCell" style="height: 386px;">
 		<div class="intro">
 			<h1>House</h1>
-			<p>AHHHHHHHHHHHH</p>
+			
 			
 			<div class="container">
   <br>
@@ -159,18 +205,13 @@ $(document).ready(function(){
 	<div class="section fp-section fp-table" id="section2" data-anchor="3rdPage" style="height: 386px; background-color: rgb(123, 170, 190);"><div class="fp-tableCell" style="height: 386px;">
 		<div class="intro">
 			<h1>RESERVATION</h1>
-			<p>YEEEEEEEEEEEEEEEEEE</p>
+			
 		</div>
 	</div></div>
-	<div class="section fp-section fp-table" id="section3" data-anchor="4thPage" style="height: 386px; background-color: rgb(123, 170, 190);"><div class="fp-tableCell" style="height: 386px;">
+	<div class="section fp-section fp-table" id="section3" data-anchor="4thPage" style="height: 386px; "><div class="fp-tableCell" style="height: 386px;">
 		<div class="intro">
 			<h1>ABOUT</h1>
-			<p>Wowwwwwwwwwwwww</p>
-			
-			
-			
-			
-			
+	
 
         
         
@@ -208,25 +249,21 @@ $(document).ready(function(){
 	            <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
 	        </div>
 	    </div> <!--.story-->
-	</div> <!--#third-->
-	
-</body>
-</html>
-			
-			
-			
-			
+	</div> <!--#third-->	
 			
 		</div>
 	</div></div>
 	<div class="section fp-section fp-table" id="section4" data-anchor="5thPage" style="height: 386px; background-color: rgb(123, 170, 190);"><div class="fp-tableCell" style="height: 386px;">
 		<div class="intro">
 			<h1>Contact</h1>
-			<p>HAHAHAHAHAHAHa</p>
+			
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.952703481513!2d121.5174855!3d25.0356791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99dbb98f57f%3A0x5bc1d8d27826f710!2z6Ie654Gj5rCR5Li757SA5b-15ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1466940594280" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div></div>
+        </div></div>
+       
+        </div>
+        <div id="footer"></div>
 </div>
 
-<div id="footer"></div>
+
 </body>
 </html>
