@@ -2,7 +2,6 @@
 .fp-tableCell{
     
     margin:0 auto;
-    width: 1000px;
     position: relative;
 }
 h1{
@@ -85,12 +84,7 @@ a {
     padding: 3px 10px;
 
 }
-#section{
 
-    margin: 0 auto;
-    position: relative;
-    
-}
 .news{
    
     display: inline-block;
