@@ -1,3 +1,25 @@
 .intro{
 	overflow: hidden;
+	/*padding-top: 100px;*/
+	/*padding-bottom: 100px;*/
 }    
+/*#content{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}*/
+/*carousel*/
+.carousel-inner img{
+    width: 100%;
+    margin: auto;
+}
+.reserve{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.about{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.contact{
+	    padding-bottom: 100px;
+}

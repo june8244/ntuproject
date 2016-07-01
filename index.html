@@ -141,73 +141,60 @@ $(document).ready(function(){
 	</div>
 	<div class="section fp-section fp-table" id="section1" data-anchor="secondPage" style="height: 386px; background-color: rgb(75, 191, 195);"><div class="fp-tableCell" style="height: 386px;">
 		<div class="intro">
-			<h1>House</h1>
+			<h1>Room Type</h1>
 			
 			
-			<div class="container">
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="images/land02.JPG" alt="Chania" width="460" height="345">
+<div class="container-fluid" id="content" style="padding:0;">
+    <!-- carousel slide start-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" style=" margin: 0 auto;">
+      <ol class="carousel-indicators">   
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active"style=" margin: 0 auto;"><img class="img-responsive" src="images/bg-1.jpg" style="width:100%;">
         <div class="carousel-caption">
-          <h3>Chania</h3>
-          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        <h3>Type 1 : Cabin</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum dolores ab, fugit culpa nulla architecto possimus aliquam nemo mollitia, repellat, alias nobis suscipit. Id ex aliquid ad, ducimus tempora?</p>
+      </div>
+      </div>
+        <div class="item"><img class="img-responsive" src="images/bg-2.jpg" alt=""  style="width:100%;">
+<div class="carousel-caption">
+        <h3>Type 2 : Business Room</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fugiat eligendi, blanditiis non, aspernatur repellat amet doloremque architecto! Obcaecati similique, magnam excepturi facilis, quia ipsam harum sunt! Quo, tenetur at.</p>
+      </div>
+        </div>
+        <div class="item"><img class="img-responsive" src="images/bg-3.jpg" alt=""  style="width:100%;">
+<div class="carousel-caption">
+        <h3>Type 3 : Double Room</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, animi eveniet eum alias facere blanditiis obcaecati similique optio quis libero qui facilis quam ab aut voluptate. Doloremque, et! Libero, distinctio.</p>
+      </div>
+        </div>
+        <div class="item"><a href="about.html"><img class="images-responsive" src="images/bg-4.jpg" alt=""  style="width:100%;"></a>
+<div class="carousel-caption">
+        <h3>Type 4 : Presidential Suite</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut illo beatae placeat eius, cumque iste, incidunt quos quod exercitationem suscipit officiis magni veniam fugiat nostrum necessitatibus molestiae ullam! Ipsa, aliquam.</p>
+      </div>
         </div>
       </div>
-
-      <div class="item">
-        <img src="images/land03.jpg" alt="Chania" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Chania</h3>
-          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="images/pet.jpg" alt="Flower" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Flowers</h3>
-          <p>Beatiful flowers in Kolymbari, Crete.</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="images/land01.jpg" alt="Flower" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Flowers</h3>
-          <p>Beatiful flowers in Kolymbari, Crete.</p>
-        </div>
-      </div>
-  
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
 </div>
-
-		</div>
-	</div></div>}
+    <!-- carousel slide end-->
 	<div class="section fp-section fp-table" id="section2" data-anchor="3rdPage" style="height: 386px; background-color: rgb(123, 170, 190);"><div class="fp-tableCell" style="height: 386px;">
-		<div class="intro">
+		
+
+<div class="reserve container" >
 			<h1>RESERVATION</h1>
       <form id="reservation">
          <p>Please fill in the information of your pet</p>
@@ -314,28 +301,31 @@ $(document).ready(function(){
     </div>
 		</div>
 	</div></div>
+
+
+
 	<div class="section fp-section fp-table" id="section3" data-anchor="4thPage" style="height: 386px; "><div class="fp-tableCell" style="height: 386px;">
-		<div class="intro">
+		<div class="intro" class="about">
 			<h1>ABOUT</h1>
 	
 
         
         
-	<ul id="nav">
+<!-- 	<ul id="nav">
 		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
 	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
 	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
 	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	</ul>
+	</ul> -->
 	
-	<div id="intro">
+	<div id="intro" class="time">
 		<div class="story">
 	    	<div class="float-left">
 			<h2>Origing</h2>
 	        <p>This section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position of the background for every pixel the page is scrolled.</p>
 	        </div>
 	    </div> <!--.story-->
-	</div> <!--#intro-->
+	</div> <!--intro-->
 	
 	<div id="second">
 		<div class="story"><div class="bg"></div>
@@ -346,7 +336,7 @@ $(document).ready(function(){
 	        </div>
 	    </div> <!--.story-->
 	    
-	</div> <!--#second-->
+	</div> <!--second-->
 	
 	<div id="third">
 		<div class="story">
@@ -355,19 +345,19 @@ $(document).ready(function(){
 	            <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
 	        </div>
 	    </div> <!--.story-->
-	</div> <!--#third-->	
+	</div> <!--third-->	
 			
 		</div>
 	</div></div>
 	<div class="section fp-section fp-table" id="section4" data-anchor="5thPage" style="height: 386px; background-color: rgb(123, 170, 190);"><div class="fp-tableCell" style="height: 386px;">
-		<div class="intro">
+		<div class="intro contact text-center col-xs-12">
 			<h1>Contact</h1>
 			<br>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.952703481513!2d121.5174855!3d25.0356791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99dbb98f57f%3A0x5bc1d8d27826f710!2z6Ie654Gj5rCR5Li757SA5b-15ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1466940594280" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div></div>
        
         </div>
-        <div id="footer nav_inverse" >
+        <div id="footer" >
            <div class="f-text">
            網頁前端團隊版權開發所有© <br>
            All Rights Reserved.

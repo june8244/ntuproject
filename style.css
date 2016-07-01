@@ -82,6 +82,7 @@ h2{
 
 #intro{
 	background:url(images/firstBG.jpg) 50% 0 no-repeat fixed;
+	background-size: 100% 100%;
 	color: black;
 	height: 800px;
 	margin: 0 auto;
