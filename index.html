@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>ZooTopia</title>
-    
+
+    <!-- bootstrap -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+    <script type= "text/javascript" src = "JS/P_type.js"></script>
+<!--    datepicker-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+<link rel="stylesheet" href="CSS/reserve.css">
    
 	<!--slick-->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -202,7 +209,109 @@ $(document).ready(function(){
 	<div class="section fp-section fp-table" id="section2" data-anchor="3rdPage" style="height: 386px; background-color: rgb(123, 170, 190);"><div class="fp-tableCell" style="height: 386px;">
 		<div class="intro">
 			<h1>RESERVATION</h1>
-			
+      <form id="reservation">
+         <p>Please fill in the information of your pet</p>
+        <div class="form-group col-xs-12 col-sm-6">
+          <label for="weight">Weight</label>
+          <input type="text" class="form-control" id="Weight" placeholder="Unit(kg)">
+        </div>
+        <div class="form-group col-xs-12 col-sm-6">
+          <label for="R_type">Room Type</label>
+          <select id="R_type" class="form-control" name ="R_type">
+            <option value="1">Room 1</option>
+            <option value="2">Room 2</option>
+            <option value="3">Room 3</option>
+            <option value="4">Room 4</option>
+          </select>
+          </div>
+
+          <div class="form-group col-xs-12 col-sm-6">
+            <label for="P_type">Pet Type</label>
+            <select id="P_type" class="form-control" name ="P_type"></select>
+          </div>
+          <div class="form-group col-xs-12 col-sm-6">
+            <label for="P_breed">Pet Breed</label>
+            <select id="P_breed" class="form-control" name ="P_breed"></select>
+            <script language="javascript">
+                populateCountries("P_type", "P_breed");
+            </script>
+          </div>
+
+         <div class="form-group col-xs-6" id="start_t">
+           <label for="start_t">Start Time</label>
+            <input type="text" class="form-control" data-provide="datepicker" id="dt1">
+        </div>
+         <script>
+             $('#start_t .text').click(function(){
+                  $('#start_t').datepicker('show');
+            return false;
+            });
+             $('#start_t .input').datepicker({
+                 language: "en",
+                 clearBtn: true,
+                 format: "yyyy/mm/dd",
+                 autoclose: true, //whe date is selected, auto close
+                 todayHighlight: true
+             });
+            </script>     
+         <div class="form-group col-xs-6" id="end_t">
+           <label for="duration">Duration</label>
+            <input type="text" class="form-control" id="duration" placeholder="(days)">
+        </div>
+         <script>
+
+    $('.input-group.date').datepicker({
+        language: "en",
+        clearBtn: true,
+        format: "yyyy/mm/dd",
+        autoclose: true, //whe date is selected, auto close
+        todayHighlight: true
+    });
+</script>       
+          <div class="form-group col-xs-12">
+            <label for="Price">Price</label>
+            <p class="form-control-static" id="price">Price will show here</p>
+          </div>
+
+          <script>
+          function myFunction() {
+          var money;
+          var total;
+          var weight = document.getElementById("Weight").value;
+          var day = document.getElementById("duration").value;
+          var x = document.getElementById("R_type").selectedIndex;
+          if(document.getElementsByTagName("option")[x].value == 1){
+            money = 100;
+            // document.getElementById("price").innerHTML = "New text!";
+          }
+          if(document.getElementsByTagName("option")[x].value == 2){
+            money = 200;
+          }
+          if(document.getElementsByTagName("option")[x].value == 3){
+            money = 250;
+          }
+          if(document.getElementsByTagName("option")[x].value == 4){
+            money = 1000;
+          }
+          if(weight < 10){
+            total = money * day;
+          }
+          else if(weight >= 10 && weight <= 20){
+            total = money * day * 1.5;
+          }
+          else if (weight > 20) {
+            total = money * day * 2;
+          }
+         
+          document.getElementById("price").innerHTML = total;
+        }
+</script>
+          <div class="form-group text-center">
+              <button type="submit" class="btn btn-default" onclick="myFunction()">Try it</button>    
+          </div>
+          
+        </form>
+    </div>
 		</div>
 	</div></div>
 	<div class="section fp-section fp-table" id="section3" data-anchor="4thPage" style="height: 386px; "><div class="fp-tableCell" style="height: 386px;">
